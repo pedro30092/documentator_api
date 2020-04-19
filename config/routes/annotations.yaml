@@ -1,6 +1,10 @@
 controllers:
     resource: ../../src/Controller/
     type: annotation
+    # this is added to the beginning of all imported route URLs
+    prefix: '/api/v1'
+    # this is added to the beginning of all imported route names
+    name_prefix: 'api_'
 
 kernel:
     resource: ../../src/Kernel.php
